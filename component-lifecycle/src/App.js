@@ -31,11 +31,12 @@ class App extends React.Component {
   render(){
   return (
     <div className="App">
-      {/* <header height="200" className="App-header"> */}
+      {/* <header height="100" width="100" className="App-header"> */}
           <h1>{this.state.userData.login}</h1>
-          <img border-radius = "50%" src ={this.state.userData.avatar_url} alt=""/>
+          <img src ={this.state.userData.avatar_url} alt=""/>
         {/* </header> */}
-        <div>
+        <div >
+          <h1>Followers:</h1>
              {
              this.state.followers.map(follower=>{
                 return <User key={follower.id} name={follower.login} avatar ={follower.avatar_url} url={follower.html_url}/>

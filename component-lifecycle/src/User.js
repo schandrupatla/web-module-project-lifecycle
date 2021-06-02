@@ -9,7 +9,7 @@ const User = (props)=>{
         <div>
              <h5>{name}</h5>
              <div>
-                <img border-radius="50%" height="200" width="200" src ={avatar} alt=""/>
+                <img  style={{borderRadius: "50%"}} height="200" width="200" src ={avatar} alt=""/>
              </div>
              <a href={url}>Github_url</a>
         </div>
